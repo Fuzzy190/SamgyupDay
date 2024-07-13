@@ -440,7 +440,6 @@ h5{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(/img/bg.png);
         background-size: cover;
         height: 100vh;
     }
