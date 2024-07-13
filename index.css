@@ -1,16 +1,16 @@
 @font-face{
     font-family: Bubble;
-    src: url(/fonts/Shine\ Bubble.ttf);
+    src: url(./fonts/Shine\ Bubble.ttf);
 }
 
 @font-face{
     font-family: Adegianty;
-    src: url(/fonts/Adegianty.ttf);
+    src: url(./fonts/Adegianty.ttf);
 }
 
 @font-face{
     font-family: Mairy;
-    src: url(/fonts/Mairy\ Regular.otf);
+    src: url(./fonts/Mairy\ Regular.otf);
 }
 
 .spanH1Tag{
@@ -131,7 +131,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(/img/bg.png);
+    background-image: url(./img/bg.png);
     background-size: cover;
     height: 725px;
 }
@@ -281,7 +281,7 @@ body{
 }
 
 .parallax2{
-    background-image: url(/img/bg2.jpg);
+    background-image: url(./img/bg2.jpg);
     background-size: cover;
     font-family: Mairy;
     display: flex;
@@ -299,7 +299,7 @@ body{
     padding: 8% 0% 8% 0%;
     justify-content: space-evenly;
     font-family: Mairy;
-    background: url(/img/bg3.jpg);
+    background: url(./img/bg3.jpg);
     background-size: cover;
     text-shadow: 5px 5px 8px black;
 }
@@ -553,7 +553,7 @@ h5{
         justify-content: center;
         align-items: center;
         font-family: Mairy;
-        background: url(/img/bg3.jpg);
+        background: url(./img/bg3.jpg);
         background-size: cover;
         text-shadow: 5px 5px 8px black;
     }
