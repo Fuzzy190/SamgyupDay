@@ -1,0 +1,626 @@
+@font-face{
+    font-family: Bubble;
+    src: url(/fonts/Shine\ Bubble.ttf);
+}
+
+@font-face{
+    font-family: Adegianty;
+    src: url(/fonts/Adegianty.ttf);
+}
+
+@font-face{
+    font-family: Mairy;
+    src: url(/fonts/Mairy\ Regular.otf);
+}
+
+.spanH1Tag{
+    font-size: 60px; text-transform: uppercase;
+}
+
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.homeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.2%;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    border-radius: 20px;
+    transition: 500ms;
+    rotate: -180deg;
+}
+
+.homeButton:hover{
+    background-color: rgba(255, 255, 255, 1);
+    rotate: 0deg;
+    transition: 500ms;
+}
+
+/*Nav bar*/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;    
+}
+
+.navLogo{
+    background: rgb(255,255,255);
+    display: flex;
+    align-items: center;
+    padding-right: 10%;
+    border-bottom-right-radius: 150px;
+}
+
+.navLogo img{
+    width: 200px;
+    height: 200px;
+    margin-right: 2%;
+}
+
+.navMenu{
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+    width: 35%;
+}
+
+.navMenu a{
+    font-family: Bubble, cursive;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    margin: auto;
+    text-decoration: none;
+    padding: 2%;
+    border-radius: 5px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+    border: 3px solid white;
+}
+
+.navMenu a:hover{
+    color: red;
+    transition: 300ms;
+    rotate: 5deg;
+    border: 3px solid red;
+}
+
+.location{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+.head1{
+    font-size: 4vh;
+    text-transform:uppercase;
+    background-color: red;
+    font-family: Bubble, cursive;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
+}       
+
+.head2{
+    font-size: 5vh;
+    color: black;
+    background-color: black;
+    font-family: Adegianty, cursive;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: yellow;
+    padding-right: 0.5%;
+    letter-spacing: 4px;
+}
+
+/*Parallax1*/
+.parallax1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/img/bg.png);
+    background-size: cover;
+    height: 725px;
+}
+
+.spanTag{
+    font-size: 100px;
+    color: yellow;
+}
+
+.parallax1 h1{
+    font-size: 50px;
+    font-family: Mairy;
+    width: 30%;
+    margin-left: 5%;
+    text-shadow: 5px 5px 10px black;
+}
+
+/*Products*/
+.productsContainer{
+    width: 80%;
+    padding-bottom: 10%;
+    text-shadow: 5px 5px 10px black;
+    border-radius: 100px;
+}
+
+.productsContainer img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.reserveButton{
+    font-family: Bubble, cursive;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 1%;
+    margin: 10px;
+    border-radius: 5px;
+    border: 3px solid white;
+    transition: 300ms;
+    background-color: transparent;
+}
+
+.reserveButton:hover{
+    color: red;
+    border: 3px solid red;
+    rotate: 5deg;
+    transition: 300ms;
+}
+
+.menu .reserveButton{
+    font-size: 20px;
+}
+
+
+.productsMenu{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    padding: 5%;
+    gap: 20px;
+    border-radius: 100px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+}
+
+.foodItemsFeatured{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    border-radius: 50px;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.topItem, .botItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topItem img{
+    width: 105px;
+    height: 105px;
+}
+
+.botItem img{
+    width: 60px;
+    height: 60px;
+}
+
+.foodItems{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1%;
+    height: 180px;
+    padding: 2%;
+    width: 80%;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.foodItems img{
+    width: 85px;
+    height: 85px;
+    transition: 300ms;
+}
+
+.foodItems img:hover{
+    transition: 300ms;
+}
+
+.gridProduct{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.productsMenu, .menu{
+    text-transform: uppercase;
+}
+
+.productsMenu h1{
+    font-size: 80px;
+}
+
+.productsMenu h2{
+    font-size: 30px;
+    word-wrap: break-word;
+}
+
+.parallax2{
+    background-image: url(/img/bg2.jpg);
+    background-size: cover;
+    font-family: Mairy;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    padding: 10px;  
+}
+
+/*FOOTER*/
+
+.footer{
+    width: 100%;
+    display: flex;
+    padding: 8% 0% 8% 0%;
+    justify-content: space-evenly;
+    font-family: Mairy;
+    background: url(/img/bg3.jpg);
+    background-size: cover;
+    text-shadow: 5px 5px 8px black;
+}
+
+h5{
+    font-family: Mairy;
+}
+
+.socMed{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.socMed img{
+    display: flex;
+    flex-direction: column;
+    transform-origin: 50% 50%;
+    transition: 300ms ease;
+    cursor: pointer;
+}
+
+.socMed img:hover{
+    scale: 1.2;
+    transition: 300ms ease;
+}
+
+.contactUsContainer a{
+    color: white;
+    font-size: 20px;
+    transition: 300ms ease;
+}
+
+.contactUsContainer a:hover{
+    transition: 300ms ease;
+    color: red;
+}
+
+.signInContainer, .contactUsContainer{
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 50px;
+    padding: 3%;
+    margin: 5%;
+    width: 20%;
+}
+
+.signInContainer form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+
+.formInput{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    resize: none;
+    text-decoration: none;
+}
+
+.formInput input{
+    margin-left: 5%;
+    height: 20px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.formInput h4{
+    width: 30%;
+    font-size: 20px;
+    text-align: right;
+}
+
+#formButton{
+    font-family: Bubble, cursive;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 300ms;
+    border: 3px solid white;
+}
+
+#formButton:hover{
+    color: red;
+    transition: 300ms;
+    rotate: 5deg;
+    border: 3px solid red;
+}
+
+@media only screen and (max-width: 600px) {    
+    /*ALL AROUNDERS*/
+    .spanH1Tag{
+        font-size: 30px; text-transform: uppercase;
+    }
+    
+    /*NAVBAR*/
+    
+    .navLogo{
+        padding-right: 10%;
+        border-bottom-right-radius: 80px;
+    }
+    
+    .navLogo img{
+        margin: 5%;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .navMenu{
+        display: flex;
+        align-items: center;
+        margin-right: 0.1%;
+        width: 100%;
+    }
+    
+    .navMenu a{
+        font-size: 8px;
+    }
+    
+    .head1{
+        display: none;
+    }       
+    
+    .head2{
+        display: none;
+    }
+
+    /*Parallax1*/
+    .parallax1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/img/bg.png);
+        background-size: cover;
+        height: 100vh;
+    }
+    
+    .spanTag{
+        font-size: 60px;
+        color: yellow;
+    }
+    
+    .parallax1 h1{
+        font-size: 30px;
+        font-family: Mairy;
+        width: 100%;
+        margin-left: 5%;
+        text-shadow: 5px 5px 10px black;
+    }
+
+    .location{
+        display: none;
+    }
+    
+
+    /*Products*/        
+    .productsContainer{
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reserveButton{
+        font-size: 10px;
+    }
+    
+    .menu .reserveButton{
+        font-size: 5px;
+    }
+    
+    .menu{
+        font-size: 5px;
+        width: 100%;
+    }
+    
+    .foodItemsFeatured{
+        padding: 5%;
+        width: 100%;
+        height: 50px;
+    }
+    
+    .topItem, .botItem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .topItem img{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .botItem img{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .foodItems{
+        height: 40px;
+        width: 80%;
+    }
+    
+    .foodItems img{
+        width: 20px;
+        height: 20px;
+        transition: 300ms;
+    }
+    
+    .foodItems img:hover{
+        transition: 300ms;
+    }
+    
+    .gridProduct{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    
+    .productsMenu, .menu{
+        text-transform: uppercase;
+    }
+    
+    .productsMenu h1{
+        font-size: 20px;
+    }
+    
+    .productsMenu h2{
+        font-size: 6px;
+    }
+
+    /*FOOTER*/
+
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 8% 0% 8% 0%;
+        justify-content: center;
+        align-items: center;
+        font-family: Mairy;
+        background: url(/img/bg3.jpg);
+        background-size: cover;
+        text-shadow: 5px 5px 8px black;
+    }
+    
+    .socMed img{
+        display: flex;
+        flex-direction: column;
+        transform-origin: 50% 50%;
+        transition: 300ms ease;
+        cursor: pointer;
+    }
+    
+    .socMed img:hover{
+        scale: 1.2;
+        transition: 300ms ease;
+    }
+    
+    .contactUsContainer a{
+        font-size: 15px;
+    }
+    
+    .contactUsContainer a:hover{
+        transition: 300ms ease;
+        color: red;
+    }
+    
+    .signInContainer, .contactUsContainer{
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 50px;
+        padding: 3%;
+        margin: 5%;
+        width: 85%;
+    }
+
+    .signInContainer h1, .contactUsContainer h1{
+        text-align: center;
+    }
+    
+    .signInContainer form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+    }
+    
+    .formInput{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        resize: none;
+        text-decoration: none;
+    }
+    
+    .formInput input{
+        margin-left: 5%;
+        height: 15px;
+        width: 100%;
+        font-size: 10px;
+    }
+    
+    .formInput h4{
+        width: 30%;
+        font-size: 15px;
+        text-align: right;
+    }
+    
+    #formButton{
+        font-size: 15px;
+    }
+}
